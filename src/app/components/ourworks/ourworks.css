@@ -1,0 +1,54 @@
+.ourworks h2 {
+ text-align: center;
+ margin: 76px 0px  53px 0px;
+ line-height: 36px;
+ font-size: 36px;
+ color: #2B343B;
+}
+
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+  }
+  
+  .carousel-track {
+    display: inline-flex;
+    animation: scroll 20s linear infinite;
+    width: max-content;
+  }
+  
+  .carousel-track:hover {
+    animation-play-state: paused;
+  }
+  
+  .carousel-card {
+    flex-shrink: 0;
+    margin: 0 15px;
+    background-color: #153E5A;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    color: white;
+    height: 350px;
+    width: 245px
+    
+  }
+  .carousel-card img{
+    width: 100%;
+  }
+
+  
+  .carousel-card-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }

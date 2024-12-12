@@ -1,0 +1,251 @@
+.top-header {
+  display: flex;
+  background-color: #2b343b;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  color: white;
+  padding: 13px 200px;
+  line-height: 16.41px;
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+}
+.top-left {
+  display: flex;
+  gap: 62px;
+}
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 62px;
+}
+.mail-block {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.social-medias {
+  display: flex;
+  gap: 15px;
+}
+
+/* middle */
+
+.middle-header {
+  display: flex;
+  background-color: #eff4f8;
+  height: 120px;
+  padding: 0px 200px;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 50%;
+  padding-top: 20px;
+}
+
+.phone-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 80%;
+  justify-items: start;
+  margin-bottom: 20px;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.call-icon {
+  color: #0071bb;
+}
+.icon-number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone-link-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.single-number {
+  background-image: linear-gradient(to bottom, #f32735, #a7111c);
+
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-weight: bolder;
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5px 10px;
+  }
+}
+
+/* navbar */
+nav {
+  height: 62px;
+  background: linear-gradient(to right, #016baf, #034a78);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 200px;
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 1111;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .top-header,
+  .middle-header {
+    display: none;
+  }
+  .middle-header nav {
+    display: none;
+  }
+  nav {
+    height: unset;
+  }
+  .dropdown {
+    display: none;
+  }
+  .mobile-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .burger-menu {
+    font-size: 24px;
+    color: #034a78;
+    cursor: pointer;
+  }
+
+  .logo img {
+    max-height: 40px;
+  }
+
+  .sidebar-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    z-index: 999;
+    transition: left 0.3s ease-in-out;
+    overflow-y: auto;
+    padding-top: 70px;
+  }
+
+  .sidebar-menu.open {
+    left: 0;
+  }
+
+  .sidebar-scroll {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-link,
+  .sidebar-link-dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .sidebar-link-dropdown {
+    cursor: pointer;
+  }
+
+  .sidebar-sublink {
+    padding: 12px 40px;
+    background-color: #f9f9f9;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+    display: block;
+  }
+
+  .dropdown-content {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .dropdown-content.active {
+    display: block;
+    max-height: 500px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-header {
+    display: none;
+  }
+  .sidebar-menu{
+   display: none;
+  }
+  }
+

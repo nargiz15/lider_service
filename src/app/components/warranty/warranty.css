@@ -1,0 +1,186 @@
+
+.bg {
+    background-image: url('/bg.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .breadcrumb-container {
+    background-image: url("/banner-br.png");
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .banner-title {
+    z-index: 999;
+    color: rgba(255, 255, 255, 1);
+    line-height: 26px;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  
+  .breadcrumb-container a,
+  .breadcrumb-container span {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  
+  .warranty-container {
+    padding: 0 200px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .warranty-block {
+    width: 1040px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 0 auto;
+  }
+  
+  .warranty-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .img-delivery img {
+    height: auto;
+    border-radius: 8px;
+    margin-top: 40px;
+  }
+  
+  .text-warranty{
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+   
+  }
+  .info{
+    margin: 15px 0px 20px 0px;
+}
+.warranty-icon{
+    margin: 20px 0px 15px 0px;
+    color: rgba(0, 164, 46, 1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 28px;
+    font-weight: 500;
+    svg{
+        color: rgba(0, 164, 46, 1);
+        font-size: 24px;
+    }
+}
+.warranty-iconclose{
+    margin: 20px 0px 0px 0px;
+    color: rgba(243, 39, 53, 1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 28px;
+    font-weight: 500;
+    svg{
+        color: rgba(243, 39, 53, 1);
+        font-size: 30px;
+    }
+}
+ul,ol{
+ 
+  
+    margin: 13px 40px;
+    color: rgba(86, 86, 86, 1);
+    li{
+        margin-top: 13px;
+    }
+}
+h4{
+   font-size: 20px;
+    margin: 5px 13px;
+    color: rgba(43, 52, 59, 1);
+    line-height: 28px;
+}
+/* ol{
+    margin: 13px 40px;
+    color: rgba(86, 86, 86, 1);
+    li{
+        margin-top: 13px;
+    }
+} */
+  
+  .text-warranty h2 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgba(43, 52, 59, 1);
+  }
+  
+  .text-warranty p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(86, 86, 86, 1);
+  }
+  
+  .contact-button-container {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .contact-button {
+    background-color: #0071bb;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    width: 180px;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 26px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(2, 35, 56, 0.3);
+  }
+  
+  .contact-button a {
+    color: white;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .warranty-container{
+        padding: unset;
+    }
+    .warranty-block{
+        width: 90%;
+
+    }
+    .img-delivery img{
+        width: 100%;
+    }
+    h4{
+        margin: unset;
+    }
+    .text-warranty{
+          width: 90%;
+    
+     h2{
+        font-size: 24px;
+    }
+  }
+}

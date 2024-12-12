@@ -1,0 +1,41 @@
+.mainbrends {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 200px;
+    justify-content: space-between;
+    margin: 140px 0px;
+}
+
+.mainbrends img {
+    background: #F1F4FA;
+    padding: 10px 60px;
+    border-radius: 8px;
+    width: 250px;
+    height: 120px;
+    object-fit: contain;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .mainbrends {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 0px 20px;
+        margin: 60px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainbrends img {
+        background: #F1F4FA;
+        padding: 10px;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 250px;
+        height: 120px;
+        object-fit: contain;
+        justify-self: center;
+    }
+}

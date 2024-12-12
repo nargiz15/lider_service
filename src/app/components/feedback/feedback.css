@@ -1,0 +1,43 @@
+.feedback-section {
+   background-color: #F8F9FA;
+    padding: 68px 120px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.services-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    justify-content: center;
+    color: #2B343B;
+    margin-bottom: 42px;
+    h2{
+      font-size: 36px;
+    }
+}
+
+.services-title hr {
+    width: 35px;
+    border: 1px solid #F32735;
+    height: 2px;
+}
+
+
+.services-card-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+
+
+.swiper {
+    overflow: visible;
+    width: 100%;
+}
+.swiper-slide{
+  background: unset;
+}

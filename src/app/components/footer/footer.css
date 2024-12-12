@@ -1,0 +1,138 @@
+.footer {
+  background-image: url("/bg-footer.png");
+  display: flex;
+  padding: 50px 200px;
+  gap: 95px;
+}
+.logo-side {
+  img {
+    width: 116px;
+    height: 40px;
+  }
+  p {
+    margin: 11px 0px 40px 0px;
+    width: 190px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(119, 126, 131, 1);
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+    border-radius: 36px;
+    color: rgba(0, 113, 187, 1);
+    text-align: center;
+  }
+}
+
+.site-map {
+  width: 30%;
+  h2 {
+    margin-bottom: 25px;
+    color: rgba(43, 52, 59, 1);
+    font-size: 20px;
+    line-height: 20px;
+    border-left: 3px solid rgba(0, 113, 187, 1);
+    padding-left: 9px;
+  }
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(43, 52, 59, 1);
+  text-decoration: none;
+  svg {
+    color: rgba(0, 113, 187, 1);
+  }
+}
+
+.links > a {
+  width: calc(50% - 10px);
+}
+
+.contacts h2 {
+  margin-bottom: 25px;
+  color: rgba(43, 52, 59, 1);
+  font-size: 20px;
+  line-height: 20px;
+  border-left: 3px solid rgba(0, 113, 187, 1);
+  padding-left: 9px;
+}
+
+.phone-adress {
+  display: flex;
+  gap: 40px;
+}
+
+.phones-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  a {
+    color: rgba(43, 52, 59, 1);
+    text-decoration: none;
+  }
+}
+.adress-mail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.icon-text-block {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  svg {
+    color: rgba(0, 113, 187, 1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .logo-side p {
+    width: 100%;
+  }
+.links{
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.site-map{
+  width: auto;
+}
+.links > a{
+  width: auto;
+}
+.contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+  .phone-adress {
+    flex-direction: column;
+    align-items: center;
+  }
+
+     .icon-text-block{
+      align-items: flex-start;
+      flex-direction: unset;
+
+  }
+  .icon-block{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,166 @@
+
+.bg {
+    background-image: url('/bg.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .breadcrumb-container {
+    background-image: url("/banner-br.png");
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .banner-title {
+    z-index: 999;
+    color: rgba(255, 255, 255, 1);
+    line-height: 26px;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  
+  .breadcrumb-container a,
+  .breadcrumb-container span {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  
+  .about-container {
+    padding: 0 200px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .about-block {
+    width: 1040px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 80px auto;
+    padding: 43px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .img-about{
+ 
+    text-align: center;
+    position: relative; 
+  display: inline-block;
+
+ 
+}
+.img-about::after {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    pointer-events: none; 
+  }
+  .text-about {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+   
+  }
+  
+  .text-about h2 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgba(43, 52, 59, 1);
+  }
+  
+  .text-about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(86, 86, 86, 1);
+  }
+  
+  .icon-block{
+    display: flex;
+    gap: 26px;
+    margin-top: 27px;
+   img{
+    font-size: 36px;
+    background: rgba(226, 240, 250, 1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 12px;
+}
+  }
+  .first-text h4{
+    margin-bottom: 10px;
+  }
+  
+  .contact-button-container {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .contact-button {
+    background-color: #0071bb;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    width: 180px;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 26px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(2, 35, 56, 0.3);
+  }
+  
+  .contact-button a {
+    color: white;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-container{
+        padding: unset;
+    }
+    .about-block{
+        padding: 20px;
+        width: 100%;
+    }
+    .img-about{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .icon-text-block {
+      flex-direction: column;
+
+  }
+  .text-about h2{
+    font-size: 24px;
+  }
+}

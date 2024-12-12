@@ -1,0 +1,122 @@
+/* Repair Services CSS */
+.breadcrumb-container{
+    background-image: url('/banner-br.png');
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    .banner-title{
+        z-index: 999;
+        color: rgba(255, 255, 255, 1);
+        line-height: 26px;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    a, span{
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+}
+
+
+.repair-services-container {
+  margin: 0 auto;
+  background-image: url('/bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.services-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 136px 200px;
+  border-bottom: 2px solid rgba(222, 224, 229, 1);
+}
+
+.services-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+.service-card {
+  background-image: url("/Mask Group.png");
+  width: 100%;
+  max-width: 245px;
+  height: 291px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1111;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card-icon {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.service-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.service-card-link {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.service-card-button {
+  background-color: #007bff;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.service-card-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-row {
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-row {
+    grid-template-columns: 1fr;
+  }
+  .services-grid{
+    padding: 40px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+}

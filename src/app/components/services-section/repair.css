@@ -1,0 +1,231 @@
+/* Services Section Responsive Styles */
+.services-section {
+  background-image: url('/bg.png');
+  padding: 48px 120px;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Services Title Styles */
+.services-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  justify-content: center;
+  color: #2B343B;
+  margin-bottom: 42px;
+}
+
+.services-title h2 {
+  font-size: 36px;
+}
+
+.services-title hr {
+  width: 35px;
+  border: 1px solid #F32735;
+  height: 2px;
+}
+
+/* Swiper Navigation Customization */
+.services-slider-container {
+  position: relative;
+}
+
+.swiper {
+  overflow: visible;
+  width: 100%;
+}
+
+.swiper-slide {
+  background: unset;
+  display: flex;
+  justify-content: center;
+}
+
+/* Custom Swiper Navigation Styles */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #0071BB !important;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 24px !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #0071BB;
+  color: white !important;
+}
+
+.swiper-button-prev {
+  left: -80px !important;
+}
+
+.swiper-button-next {
+  right: -80px !important;
+}
+
+/* Service Card Styles */
+.service-card {
+  background-image: url('/Mask Group.png');
+  width: 100%;
+  max-width: 245px;
+  height: 291px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card-icon {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.service-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.service-card-link {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.service-card-button {
+  background-color: #007bff;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.view-all-link {
+  display: flex;
+  align-items: center;
+  color: #0071BB;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid #0071BB;
+}
+
+.view-all-link:hover {
+  color: #0056b3;
+}
+
+.view-all-icon {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.view-all-link:hover .view-all-icon {
+  transform: translateX(5px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1280px) {
+  .services-section {
+    padding: 48px 60px;
+  }
+
+  .swiper-button-prev {
+    left: -60px !important;
+  }
+
+  .swiper-button-next {
+    right: -60px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services-section {
+    padding: 48px 40px;
+  }
+
+  .services-title h2 {
+    font-size: 28px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .swiper-button-prev {
+    left: -40px !important;
+  }
+
+  .swiper-button-next {
+    right: -40px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 32px 20px;
+  }
+
+  .services-title h2 {
+    font-size: 24px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    padding: 24px 12px;
+  }
+
+  .services-title h2 {
+    font-size: 20px;
+  }
+  .services-grid{
+    padding: 40px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+}
