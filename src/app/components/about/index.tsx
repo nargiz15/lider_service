@@ -46,7 +46,7 @@ const About = () => {
                   Zəmanət müddəti ərzində hər hansı bir detal çatışmamazlığı ilə
                   yaranan problemlər servis tərəfindən pulsuz həll olunur.
                 </p>
-               <div className="icon-text-block">
+               <div className="icon-text-blockk">
                 <div className="icon-block">
                   <img src="abouticon.svg" alt="icon" />
                   <div className="first-text">

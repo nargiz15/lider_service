@@ -15,28 +15,37 @@ import "./header.css";
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
- 
-    const phoneNumbers = [
-      { label: "", number: "(+994 12) 565-1-565" },
-      { label: "", number: "(+994 12) 565-2-565" },
-      { label: "", number: "(+994 55) 222-34-19" },
-      { label: "", number: "(+994 55) 222-32-46" },
-    ];
-   
-    const singlePhoneNumber = "180";
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-    setActiveDropdown(null);
-  };
   const [showRepair, setShowRepair] = useState(false);
   const [showInstall, setShowInstall] = useState(false);
+
+  const phoneNumbers = [
+    { label: "", number: "(+994 12) 565-1-565" },
+    { label: "", number: "(+994 12) 565-2-565" },
+    { label: "", number: "(+994 55) 222-34-19" },
+    { label: "", number: "(+994 55) 222-32-46" },
+  ];
+   
+  const singlePhoneNumber = "180";
+
+  const toggleSidebar = () => {
+    const newSidebarState = !isSidebarOpen;
+    setIsSidebarOpen(newSidebarState);
+    setActiveDropdown(null);
+    
+    // Add or remove class on body to control overlay
+    if (newSidebarState) {
+      document.body.classList.add('sidebar-open');
+    } else {
+      document.body.classList.remove('sidebar-open');
+    }
+  };
 
   const toggleDropdown = (dropdown: string) => {
     setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
   };
 
   const repairSubLinks = [
-    { label: "Kondisioner Təmiri", href: "/xidmetler" },
+    { label: "Kondisioner Təmiri", href: `/xidmetler` },
     { label: "Soyuducu Təmiri", href: "/" },
     { label: "Paltaryuyan təmiri", href: "/" },
     { label: "Televizor təmiri", href: "/" },
@@ -135,12 +144,12 @@ const Header = () => {
           <Link href="/temir">Təmir</Link>
           {showRepair && (
             <div className="dropdown-content">
-              <Link href="/xidmetler">Kondisioner Təmiri</Link>
-              <Link href="/">Soyuducu Təmiri</Link>
-              <Link href="/">Paltaryuyan təmiri</Link>
-              <Link href="/">Televizor təmiri</Link>
-              <Link href="/"> Qaz sobası təmiri</Link> 
-              <Link href="/">Elektrik sobası təmiri</Link>
+              <Link href="xidmetler/kondisioner-temiri">Kondisioner Təmiri</Link>
+              <Link href="/xidmetler/soyuducu-temiri">Soyuducu Təmiri</Link>
+              <Link href="/xidmetler/paltaryuyan-temiri">Paltaryuyan təmiri</Link>
+              <Link href="/xidmetler/tv-temiri">Televizor təmiri</Link>
+              <Link href="/xidmetler/qazsobasi-temiri"> Qaz sobası təmiri</Link> 
+              <Link href="/xidmetler/elektriksobasi-temiri">Elektrik sobası təmiri</Link>
             </div>
           )}
         </div>
@@ -154,12 +163,12 @@ const Header = () => {
           <Link href="/qurasdirma">Quraşdırma</Link>
           {showInstall && (
             <div className="dropdown-content">
-              <Link href="/">Kondisioner Quraşdırmaı</Link>
-              <Link href="/">Soyuducu Quraşdırması</Link>
-              <Link href="/">Paltaryuyan Quraşdırması</Link>
-              <Link href="/">Televizor Quraşdırması</Link>
-              <Link href="/"> Qaz sobası Quraşdırması</Link> 
-              <Link href="/">Elektrik sobası Quraşdırması</Link>
+              <Link href="/qurasdirma/kondisioner">Kondisioner Quraşdırmaı</Link>
+              <Link href="/qurasdirma/soyuducu">Soyuducu Quraşdırması</Link>
+              <Link href="/qurasdirma/paltaryuyan">Paltaryuyan Quraşdırması</Link>
+              <Link href="/qurasdirma/tv">Televizor Quraşdırması</Link>
+              <Link href="/qurasdirma/qazsobasi"> Qaz sobası Quraşdırması</Link> 
+              <Link href="/qurasdirma/elektriksobasi">Elektrik sobası Quraşdırması</Link>
             </div>
           )}
         </div>
@@ -177,7 +186,7 @@ const Header = () => {
 
 
 
-      {/* Mobile Header */}
+     
       <div className="mobile-header">
         <div className="mobile-header-content">
           <div className="logo">
@@ -192,7 +201,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Sidebar Menu */}
+  
       <div className={`sidebar-menu ${isSidebarOpen ? 'open' : ''}`}>
         <div className="sidebar-scroll">
           <Link href="/" className="sidebar-link" onClick={toggleSidebar}>

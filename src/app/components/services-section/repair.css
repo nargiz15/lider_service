@@ -81,7 +81,7 @@
   background-image: url('/Mask Group.png');
   width: 100%;
   max-width: 245px;
-  height: 291px;
+  /* height: 291px; */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -200,9 +200,7 @@
 }
 
 @media (max-width: 768px) {
-  .services-section {
-    padding: 32px 20px;
-  }
+ 
 
   .services-title h2 {
     font-size: 24px;
@@ -216,13 +214,8 @@
 }
 
 @media (max-width: 480px) {
-  .services-section {
-    padding: 24px 12px;
-  }
-
-  .services-title h2 {
-    font-size: 20px;
-  }
+ 
+ 
   .services-grid{
     padding: 40px 0px;
     justify-content: center;

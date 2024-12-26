@@ -40,7 +40,7 @@
 
 @media screen and (max-width: 768px) {
   .about-container {
-    padding: 20px;
+    padding: 30px 40px;
     flex-direction: column;
   }
   .about-img-section img {

@@ -62,7 +62,7 @@ const ServicesSection = ({
           />
         </div>
       
-        <Link href={service.serviceUrl} className="service-card-link">
+        <Link href={`/xidmetler/${service.serviceUrl}`} className="service-card-link">
           <div className="service-card-button">
             <ArrowRight 
               className="text-white group-hover:translate-x-1 transition-transform" 

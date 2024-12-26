@@ -1,33 +1,32 @@
-/* Repair Services CSS */
-.breadcrumb-container{
-    background-image: url('/banner-br.png');
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    .banner-title{
-        z-index: 999;
-        color: rgba(255, 255, 255, 1);
-        line-height: 26px;
-        margin-bottom: 18px;
-        text-align: center;
-    }
-    a, span{
-        color: rgba(255, 255, 255, 1);
-        text-decoration: none;
-        font-size: 14px;
-        margin-right: 5px;
-    }
+.breadcrumb-container {
+  background-image: url("/banner-br.png");
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  a,
+  span {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 5px;
+  }
 }
-
+.banner-title {
+  z-index: 999;
+  color: rgba(255, 255, 255, 1);
+  line-height: 26px;
+  margin-bottom: 18px;
+  text-align: center;
+}
 
 .repair-services-container {
   margin: 0 auto;
-  background-image: url('/bg.png');
+  background-image: url("/bg.png");
   background-size: cover;
   background-position: center;
 }
@@ -35,7 +34,7 @@
 .services-grid {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   padding: 136px 200px;
   border-bottom: 2px solid rgba(222, 224, 229, 1);
 }
@@ -101,6 +100,14 @@
 .service-card-button:hover {
   background-color: #0056b3;
 }
+.bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -112,9 +119,17 @@
 
 @media (max-width: 480px) {
   .services-row {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
   }
-  .services-grid{
+  .banner-title{
+    font-size: 24px;
+  }
+  .services-grid {
     padding: 40px 0px;
     justify-content: center;
     align-items: center;

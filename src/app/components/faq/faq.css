@@ -2,9 +2,12 @@
     background-image: url('/bg.png');
     display: flex;
     gap: 20px;
-    padding: 170px 200px;
+    padding:  200px;
     justify-content: space-between;
     position: relative;
+    margin: 100px 0px 0px 0px;
+    background-position: center;
+    background-size: cover;
   }
   
   .faq-img-block {

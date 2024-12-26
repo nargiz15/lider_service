@@ -11,6 +11,7 @@ import About_Second from "./components/about-second";
 
 
 
+
 export default function Home() {
   const repairServices = [
     {
@@ -138,10 +139,11 @@ export default function Home() {
     <About_Second/>
     <ServiceCarousel/>
     <FAQ/>
-    <Feedback  title="Müştəri rəyləri" 
+    {/* <Feedback  title="Müştəri rəyləri" 
         services={feedbacks} 
-        viewAllLink="/qurasdirma"/>
+        viewAllLink="/qurasdirma"/> */}
     <Contact/>
+   
     </>
 
   );

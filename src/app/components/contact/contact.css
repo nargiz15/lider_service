@@ -116,8 +116,11 @@
   .order-side{
     align-items: center;
     height: auto;
+    h2{
+      font-size: 24px;
+    }
     p{
-        width: 80%;
+        width: 75%;
     }
   }
    .contact-text{
@@ -125,5 +128,9 @@
     margin: 20px;
     width: max-content;
     border-radius: 12px;
+    h2{
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
 }
 }

@@ -144,7 +144,7 @@
 
   @media screen and (max-width: 768px) {
     .about-container{
-        padding: unset;
+        padding: 20px;
     }
     .about-block{
         padding: 20px;
@@ -156,9 +156,10 @@
             width: 100%;
         }
     }
-    .icon-text-block {
-      flex-direction: column;
-
+  
+  .icon-blockk{
+    display: flex;
+    align-items: center;
   }
   .text-about h2{
     font-size: 24px;

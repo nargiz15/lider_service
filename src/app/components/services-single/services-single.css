@@ -7,6 +7,7 @@
     background-position: center;
     background-size: cover;
     text-align: center;
+    flex-direction: column;
 
     .banner-title{
         z-index: 999;
@@ -94,6 +95,7 @@
 
 .service-selector:hover {
     background-color: #e9ecef;
+    color: black;
 }
 
 .service-selector-active {
@@ -144,10 +146,18 @@
 .page-footer-copyright {
     font-size: 0.9rem;
 }
+.text{
+    line-height: 30px;
+}
+.reasons{
+    line-height: 30px;
+}
 
 @media (max-width: 768px) {
     .page-main-content {
         flex-direction: column;
+        align-items: center;
+        width: 90%;
     }
 
     .services-sidebar,
